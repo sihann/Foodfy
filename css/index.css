@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    font-family: 'Roboto', sans-serif;
+    color: #111;
+}
+
+/*--- HEADER ---*/
+header {
+    margin-top: 30px; 
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+}
+header > div {
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+.nav-menu {
+   display: flex;
+   align-items: center;  
+}
+
+.nav-logo {
+    margin-right:120px;
+}
+
+.nav-menu a {
+    margin-right: 30px;
+    font-size: 16px;
+    color: #111;
+    transition: color 0.2s;
+}
+
+.nav-menu a:active {
+    font-weight: bold;
+}
+
+.nav-menu a:hover {
+    font-weight: bold;
+}
+
+/*--- BANNER ---*/
+
+.banner {
+    width: 940px;
+    margin: 0 auto;
+    background: #FBDFDB;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 30px 0 0 0;
+}
+
+.banner-info h1 {
+    font-family: Roboto;
+    font-size: 32px;
+    color: #111111;
+    font-weight: 700;
+    line-height: 38px;
+    margin-bottom: 10px;
+}
+.banner-info p {
+    font-family: Roboto;
+    font-size: 18px;
+    color: #000;
+    font-weight: 400;
+    line-height: 28px;
+    opacity: 70%;
+    width: 316px;
+}
+
+.banner-img {
+
+}
+
+/*--- RECIPES CARDS ---*/
+.most-tittle {
+    display: flex;
+    align-items: center;
+    max-width: 940px;
+    margin: 0 auto;
+}
+.most-tittle h2 {
+    font-family: Roboto;
+    font-size: 24px;
+    color: #111111;
+    line-height: 28px;
+    font-weight: 700;
+    margin: 50px 0 20px 0;
+}
+.recipes {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 50px;
+}
+.recipes-cards {
+    cursor: pointer;
+}
+
+.card-img img{
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card-info h3 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #111;
+    line-height: 21px;
+    margin-bottom: 5px;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: #777777;
+    line-height: 16px;
+    
+}
+
+/*--- MODAL ---*/
+
+.modal-overlay {
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    opacity: 0;
+    visibility: hidden;
+}
+.modal {
+    background: #fff;
+    margin: 20vh auto;
+    position: relative;
+    width: 660px;
+    height: 413px;
+    border-radius: 15px;
+}
+.modal-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modal-img img {
+    border-radius: 15px;
+    width: 600px;
+    height: 200px;
+    margin: 30px 0 20px 0;
+    ;
+}
+.modal-info h2 {
+    font-weight: 400;
+    font-size: 24px;
+    color: #111111;
+    text-align: center;
+    line-height: 28px;
+    margin-bottom: 5px;
+}
+.modal-info p {
+    font-size: 18px;
+    color: #777777;
+    text-align: center;
+    align-items: 21px;
+    margin-bottom: 60px;
+}
+.modal-close p {
+    font-size: 16px;
+    color: #999999;
+    cursor: pointer;
+    text-align: center;
+}
+
+/*--- ATIVAR MODAL --*/
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+/*--- FOOTER ---*/
+footer {
+    background: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 30px 0;
+}
+
+footer p {
+    font-size: 14px;
+    color: #999999;
+    text-align: center;
+}
