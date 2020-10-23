@@ -98,8 +98,8 @@ header > div {
     height: 100%;
     position: fixed;
     top: 0;
-    opacity: 1;
-    /* visibility: hidden; */
+    opacity: 0;
+    visibility: hidden;
 }
 .modal {
     background: #fff;
