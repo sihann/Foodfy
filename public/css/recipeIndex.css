@@ -1,0 +1,79 @@
+/*-- PÁGINA DE RECEITA --*/
+
+main {
+    max-width: 940px;
+    margin: auto;
+}
+
+main .recipe-img {
+    height: auto;
+    margin-bottom: 50px;
+}
+main .recipe-img img {
+    border-radius: 15px;
+}
+
+main .recipe-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+main .recipe-title h1 {
+    font-size: 36px;
+    color: #111111;
+    font-weight: bold;
+    line-height: 42px;
+}
+
+main .recipe-title h3 {
+    font-size: 20px;
+    color: #777777;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+main .recipe-content {
+    margin-bottom: 10vh;
+}
+
+.content-title {
+    margin: 39px 0 20px 0;
+    display: flex;
+    align-items: baseline;        
+}
+
+.content-title h2 {
+    font-size: 24px;
+    color: #111111;
+    font-weight: bold;
+    line-height: 28px;
+}
+.content-title .button {
+    font-size: 12px;
+    color: #999999;
+    font-weight: bold;
+    line-height: 14px;
+    cursor: pointer;
+    padding-left: 8px;
+}
+
+.hide {
+    display: none;
+}
+
+.content li {
+    margin-left: 20px;
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+.content p {
+    font-size: 18px;
+    color: #444444;
+    line-height: 28px;
+    font-weight: 400;
+}
+
+

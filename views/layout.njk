@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>    
+<!--
+  _                           _     _                      _____               _  __       
+ | |    __ _ _   _ _ __   ___| |__ | |__   __ _ ___  ___  |  ___|__   ___   __| |/ _|_   _ 
+ | |   / _` | | | | '_ \ / __| '_ \| '_ \ / _` / __|/ _ \ | |_ / _ \ / _ \ / _` | |_| | | |
+ | |__| (_| | |_| | | | | (__| | | | |_) | (_| \__ \  __/ |  _| (_) | (_) | (_| |  _| |_| |
+ |_____\__,_|\__,_|_| |_|\___|_| |_|_.__/ \__,_|___/\___| |_|  \___/ \___/ \__,_|_|  \__, |
+                                                                                     |___/ 
+-->
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/css/layout.css">
+    {% block style %}
+    {% endblock style %}
+
+    <head>
+        {% block title%}
+        <title>Foodfy</title>
+        {% endblock %}
+    </head>
+    <body>
+        <header>
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <a href="/"><img src="/assets/logo.png" alt="Logo Foodfy"></a>
+                </div>
+                <div class="nav-menu">
+                    <a href="/about">Sobre</a> <a href="/recipes">Receitas</a>
+                </div>  
+
+        </header> 
+
+        {% block main %}
+        {% endblock %}
+
+        <footer>
+            <p>Todos direitos reservados, receitas Foodfy</p>
+        </footer>
+    </body>
+    
+</html>

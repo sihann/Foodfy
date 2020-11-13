@@ -1,0 +1,37 @@
+/*--- RECIPES CARDS ---*/
+
+.recipes {
+    max-width: 940px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-bottom: 10vh;
+}
+.recipes-cards {
+    cursor: pointer;
+}
+
+.card-img img{
+    width: 300px;
+    height: 140px;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.card-info h3 {
+    font-weight: 400;
+    font-size: 18px;
+    color: #111;
+    line-height: 21px;
+    margin-bottom: 5px;
+}
+
+.card-info p {
+    font-size: 14px;
+    color: #777777;
+    line-height: 16px;
+    
+}
+
+
