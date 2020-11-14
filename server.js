@@ -30,19 +30,14 @@ server.get("/recipes", function(req, res) {
     return res.render("recipes", {recipes})
 })
 
-/*-- Página receita --
+/*-- Página receita --*/
 server.get("/recipes/:index", function(req, res) {
     const recipeIndex = req.params.index
     const recipe = recipes.find(function(recipe) {
-        if(recipe[recipeIndex] == recipeIndex) {return true}
+        if(recipe[recipeIndex] === recipeIndex) {return true}
     })
-    console.log(recipes[recipeIndex]);
     
     return res.render("recipe", { recipe: recipe[recipeIndex] }) //chave recipe
-})
---*/
-server.get("/recipe", function(req, res) {
-    return res.render("recipe")
 })
 
 

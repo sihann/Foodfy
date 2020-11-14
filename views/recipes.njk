@@ -14,7 +14,7 @@
 
             {% for recipe in recipes %}
 
-                <div class="recipes-cards" id="{{recipe.title}}">
+                <div class="recipes-cards" id="{{recipes.indexOf(recipe)}}">
                     <div class="card-img">
                         <img src="{{recipe.image}}" alt="{{recipe.title}}">
                     </div>
