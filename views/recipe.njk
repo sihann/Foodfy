@@ -10,7 +10,7 @@
 
     {% block main %}
         <main>
-            <div class="recipe-img" id="{{recipe.indexOf(recipe)}}">
+            <div class="recipe-img" id="">
                 <img src="{{recipe.image}}" alt="Imagem {{recipe.title}}">
             </div>
 
@@ -25,7 +25,9 @@
                 </div>
                 <div class="content hide">
                     <ul>
-                        <li>{{recipe.ingredients}}</li>
+                        {% for ingredients in recipe.ingredients %}
+                            <li>{{ingredients}}</li>
+                        {% endfor %} 
                     </ul>
                 </div>
                 <div class="content-title"> 
@@ -34,7 +36,9 @@
 
                 <div class="content hide">
                     <ul>
-                        <li>{{recipe.preparation}}</li>               
+                        {% for preparation in recipe.preparation %}
+                            <li>{{preparation}}</li>
+                        {% endfor %}               
                     </ul>
                 </div>
                 

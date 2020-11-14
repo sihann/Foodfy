@@ -3,6 +3,7 @@ const recipesContent = document.querySelectorAll('.content')
 const buttons  = document.querySelectorAll('.button')
 
 
+
 for (let recipeCard of recipesCards) {
     recipeCard.addEventListener("click", function(){
     let recipeIndex = recipeCard.getAttribute('id')
@@ -30,3 +31,4 @@ for (const button in buttons) {
         } 
     })
 }
+

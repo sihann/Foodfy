@@ -35,9 +35,9 @@ server.get("/recipes/:index", function(req, res) {
     const recipeIndex = req.params.index
     const recipe = recipes.find(function(recipe) {
         if(recipe[recipeIndex] === recipeIndex) {return true}
-    })
+    }) 
     
-    return res.render("recipe", { recipe: recipe[recipeIndex] }) //chave recipe
+    return res.render("recipe", { recipe: recipes[recipeIndex] }) //chave recipe
 })
 
 
